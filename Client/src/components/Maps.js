@@ -19,6 +19,7 @@ class SimpleMap extends Component {
   
     this.state = {
       json: [],
+      magRange: 3
     };
   }
   
@@ -32,26 +33,45 @@ class SimpleMap extends Component {
     
     const json = (JSON.parse(resp.data.slice(resp.data.indexOf("(")+1, resp.data.length-2)))
 
-    const jsonfiltered6 = json.features.filter(terremoto=>terremoto.properties.mag>5)
-
-
+    const jsonfiltered6 =  json.features.filter(terremoto=>terremoto.properties.mag<this.state.magRange)
+    
     this.setState({json: json, filtered: jsonfiltered6})
   })
   .catch(err => console.log('error', err))
   }
 
+  filterJson() {
+    const filtered = this.state.json.features.filter(terremoto=>terremoto.properties.mag<this.state.magRange)
+    this.setState({filtered: filtered})
+  }
+
   componentDidMount() {
     this.getJson()
   }
-
+  getInitialState() {}
+  
+  handleChange = (event) => {
+    console.log(event.target, "asdasdasad")
+    this.setState({magRange: event.target.value}, ()=>{
+      this.filterJson()
+    });
+  }
+    
   render() {
-    console.log(this.state)
-
-    return (
-      // Important! Always set the container height explicitly
-
-      <div style={{ height: '100vh', width: '100%' }}>
-        <input type="range"/> 
+      console.log(this.state)
+      
+      return (
+        // Important! Always set the container height explicitly
+        
+        <div style={{ height: '100vh', width: '100%' }}>
+  
+        <input 
+          id="typeinp" 
+          type="range" 
+          min="0" max="10" 
+          value={this.state.magRange} 
+          onChange={(e) => this.handleChange(e)}
+          step="1"/>
         <GoogleMapReact
           bootstrapURLKeys={ {key: process.env.REACT_APP_APIKEY }}
           defaultCenter={this.props.center}

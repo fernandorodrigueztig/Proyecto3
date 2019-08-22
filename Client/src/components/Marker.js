@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-
+//Color, dinamico
+//opacity
+//scale
 const Wrapper = styled.div`
   position: absolute;
   top: 50%;

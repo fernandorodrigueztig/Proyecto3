@@ -1,0 +1,11 @@
+1. Passport y Autenticación (Ejemplo de Germán)
+1.2 FORMULARIO/sesion persistente
+2. Investigar google-map-react (en slack)
+3. Pintar solo el mapa
+4. Pintar el json (de cualquier forma)
+
+5. Dar estilo al mapa.
+5.5 Nodemailer. Extra
+6. Vista principal con carrusel.
+7. Extras
+-------------------------------------

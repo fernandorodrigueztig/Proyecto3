@@ -9,6 +9,8 @@ import Signup from './components/auth/Signup'
 import Login from './components/auth/Login'
 import Maps from './components/Maps'
 import Marker from './components/Marker'
+import MapSpain from './components/MapSpain'
+
 //Browser Router en Index.js
 //Aqui en app montar el Switch con las Routes. 
 //Dentro los componentes
@@ -42,8 +44,10 @@ class App extends Component {
        // <NavBar setUser={this.setTheUser} userInSession={this.state.loggedInUser} />
         <>
           
-          <h1>Soy el index de un usuario logeado</h1>
+          <h1>Estoy en App.js logueado</h1>
           <Switch>
+          
+          
             {/* <Route path="/" exact component={}></Route> */}
             {/* <Route path="/coasters" exact render={() => <CoastersList userInSession={this.state.loggedInUser} />} />
             <Route path="/coasters/:id" exact component={CoasterDetail} /> */}
@@ -54,15 +58,19 @@ class App extends Component {
       return (
            //<NavBar setUser={this.setTheUser} userInSession={this.state.loggedInUser} />
         <>
-          <Maps></Maps>
-          <h1>He renderizado</h1>
+          {/* <Maps></Maps> */}
+          <h1>Estoy en APP.js sin loguear</h1>
+          
+          
           <Switch>
           {/* <Route path="/" exact component={Signup}></Route> */}
 
-            
+
              <Route path="/profile" exact render={match => <Profile {...match} setUser={this.setTheUser} />} />
              <Route path="/signup" exact render={match => <Signup {...match} setUser={this.setTheUser} />} />
              <Route path="/login" exact render={match => <Login {...match} setUser={this.setTheUser} />} />
+             <Route path="/maps" exact render={() => <Maps userInSession={this.state.loggedInUser} />} />
+             <Route path="/mapspain" exact render={() => <MapSpain userInSession={this.state.loggedInUser} />} />
           </Switch>
         </>
       );

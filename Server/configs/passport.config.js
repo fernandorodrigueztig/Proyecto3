@@ -2,7 +2,7 @@ const User = require('../models/User');
 const LocalStrategy = require('passport-local').Strategy;
 const bcrypt = require('bcryptjs');
 const passport = require('passport');
-
+const mongoose = require('mongoose')
 
 
 
@@ -16,6 +16,8 @@ passport.deserializeUser((userIdFromSession, cb) => {
         }
         cb(null, userDocument);
     });
+    //mongostore
+
 });
 
 passport.use(new LocalStrategy((username, password, next) => {

@@ -5,83 +5,67 @@
     "features":[
         { "type": "Feature", "properties": {"evid":"es2018aaacp","fecha":"01/01/2018","hora":"00:24:00",    "latitud":"27.9198","longitud":"-16.1581","profundidad":"0","intensidad":"","magnitud":"1.7",   "tipoMagnitud":"4","localizacion":"ATLÁNTICO-CANARIAS"},"geometry": {"type": "Point", "coordinates":   [-16.1581,27.9198] } },
     
-        { "type": "Feature", "properties": {"evid":"es2018aadac","fecha":"01/01/2018","hora":"06:31:39",    "latitud":"36.6794","longitud":"-7.1540","profundidad":"18","intensidad":"","magnitud":"1.8",   "tipoMagnitud":"4","localizacion":"GOLFO DE CÁDIZ"},"geometry": {"type": "Point", "coordinates": [-7.1540, 36.6794] } },
-
-        { "type": "Feature", "properties": {"evid":"es2018aadpa","fecha":"01/01/2018","hora":"08:32:32",    "latitud":"36.7112","longitud":"-10.5884","profundidad":"30","intensidad":"","magnitud":"3.1",  "tipoMagnitud":"4","localizacion":"SW CABO DE SAN VICENTE"},"geometry": {"type": "Point", "coordinates":  [-10.5884,36.7112] } },
+        
 
         { "type": "Feature", "properties": {"evid":"es2018aaefo","fecha":"01/01/2018","hora":"09:28:16",    "latitud":"28.7288","longitud":"-17.8724","profundidad":"9","intensidad":"","magnitud":"1.7",   "tipoMagnitud":"4","localizacion":"E EL PUEBLO.ILP"},"geometry": {"type": "Point", "coordinates": [-17.8724,   28.7288] } },
 
-        { "type": "Feature", "properties": {"evid":"es2018aaeln","fecha":"01/01/2018","hora":"10:16:23",    "latitud":"36.9762","longitud":"-8.3869","profundidad":"20","intensidad":"","magnitud":"2.1",   "tipoMagnitud":"4","localizacion":"GOLFO DE CÁDIZ"},"geometry": {"type": "Point", "coordinates": [-8.3869, 36.9762] } },
+        
 
         { "type": "Feature", "properties": {"evid":"es2018aahkg","fecha":"01/01/2018","hora":"16:35:15",    "latitud":"35.3297","longitud":"-4.0065","profundidad":"0","intensidad":"","magnitud":"2.4",    "tipoMagnitud":"4","localizacion":"NW ALHUCEMAS.MAC"},"geometry": {"type": "Point", "coordinates": [-4.0065,    35.3297] } },
 
         { "type": "Feature", "properties": {"evid":"es2018aajhf","fecha":"01/01/2018","hora":"20:30:09",    "latitud":"28.2105","longitud":"-16.3666","profundidad":"21","intensidad":"","magnitud":"1.5",  "tipoMagnitud":"4","localizacion":"SE FASNIA.ITF"},"geometry": {"type": "Point", "coordinates": [-16.3666,    28.2105] } },
 
-        { "type": "Feature", "properties": {"evid":"es2018aanlo","fecha":"02/01/2018","hora":"05:48:03",    "latitud":"36.8300","longitud":"-8.4215","profundidad":"24","intensidad":"","magnitud":"1.3",   "tipoMagnitud":"4","localizacion":"GOLFO DE CÁDIZ"},"geometry": {"type": "Point", "coordinates": [-8.4215, 36.8300] } },
         
-        { "type": "Feature", "properties": {"evid":"es2018aaokf","fecha":"02/01/2018","hora":"07:45:04",    "latitud":"36.6796","longitud":"-7.5612","profundidad":"16","intensidad":"","magnitud":"2.0",   "tipoMagnitud":"4","localizacion":"GOLFO DE CÁDIZ"},"geometry": {"type": "Point", "coordinates": [-7.5612, 36.6796] } },
         
-        { "type": "Feature", "properties": {"evid":"es2018aaolj","fecha":"02/01/2018","hora":"07:55:11",    "latitud":"43.1187","longitud":"-0.6875","profundidad":"11","intensidad":"","magnitud":"2.0",   "tipoMagnitud":"4","localizacion":"SW OLORON STE MARIE.FRA"},"geometry": {"type": "Point", "coordinates":  [-0.6875,43.1187] } },
+       
 
-        { "type": "Feature", "properties": {"evid":"es2018aapam","fecha":"02/01/2018", "hora":"08:37:18","latitud":"43.1345","longitud":"-1.0165","profundidad":"0","intensidad":"",    "magnitud":"1.8","tipoMagnitud":"4","localizacion":"SW MAULEON LICHARRE.FRA"},"geometry": {"type": "Point",     "coordinates": [-1.0165,43.1345] } },
+
         
-        { "type": "Feature", "properties": {"evid":"es2018abbaj","fecha":"02/01/   2018","hora":"12:56:09","latitud":"36.6857","longitud":"-7.1243","profundidad":"18","intensidad":"",   "magnitud":"2.1","tipoMagnitud":"4","localizacion":"GOLFO DE CÁDIZ"},"geometry": {"type": "Point",     "coordinates": [-7.1243,36.6857] } },
+     
         
         { "type": "Feature", "properties": {"evid":"es2018abbpd","fecha":"02/01/   2018","hora":"14:55:00","latitud":"28.2847","longitud":"-16.5218","profundidad":"7","intensidad":"",   "magnitud":"0.9","tipoMagnitud":"4","localizacion":"NW FASNIA.ITF"},"geometry": {"type": "Point",  "coordinates": [-16.5218,28.2847] } },
         
-        { "type": "Feature", "properties": {"evid":"es2018abebk","fecha":"02/  01/2018","hora":"19:34:47","latitud":"35.9275","longitud":"-9.9626","profundidad":"3","intensidad":"",    "magnitud":"2.4","tipoMagnitud":"4","localizacion":"SW CABO DE SAN VICENTE"},"geometry": {"type": "Point",  "coordinates": [-9.9626,35.9275] } },
         
-        { "type": "Feature", "properties": {"evid":"es2018abekf","fecha":"02/01/    2018","hora":"20:45:55","latitud":"36.4777","longitud":"2.5525","profundidad":"10","intensidad":"", "magnitud":"2.8","tipoMagnitud":"6","localizacion":"SE TIPASA.ARG"},"geometry": {"type": "Point",    "coordinates": [2.5525,36.4777] } },
         
-        { "type": "Feature", "properties": {"evid":"es2018abema","fecha":"02/01/   2018","hora":"20:59:38","latitud":"36.2760","longitud":"2.6787","profundidad":"10","intensidad":"",    "magnitud":"4.6","tipoMagnitud":"6","localizacion":"W MEDEA.ARG"},"geometry": {"type": "Point",     "coordinates": [2.6787,36.2760] } },
-        
-        { "type": "Feature", "properties": {"evid":"es2018abfad","fecha":"02/01/    2018","hora":"21:33:11","latitud":"36.5339","longitud":"2.5731","profundidad":"10","intensidad":"", "magnitud":"2.6","tipoMagnitud":"6","localizacion":"SE TIPASA.ARG"},"geometry": {"type": "Point",    "coordinates": [2.5731,36.5339] } },
-        
-        { "type": "Feature", "properties": {"evid":"es2018abflk","fecha":"02/01/   2018","hora":"23:06:13","latitud":"36.4598","longitud":"2.6203","profundidad":"0","intensidad":"", "magnitud":"3.0","tipoMagnitud":"6","localizacion":"W BLIDA.ARG"},"geometry": {"type": "Point",  "coordinates": [2.6203,36.4598] } },
-        
-        { "type": "Feature", "properties": {"evid":"es2018abgfb","fecha":"03/01/ 2018","hora":"00:23:17","latitud":"36.3119","longitud":"2.6073","profundidad":"25","intensidad":"",  "magnitud":"3.6","tipoMagnitud":"6","localizacion":"NW MEDEA.ARG"},"geometry": {"type": "Point",  "coordinates": [2.6073,36.3119] } },
-        
-        { "type": "Feature", "properties": {"evid":"es2018abipj","fecha":"03/01/ 2018","hora":"06:08:32","latitud":"36.4053","longitud":"2.6116","profundidad":"11","intensidad":"",  "magnitud":"3.4","tipoMagnitud":"6","localizacion":"NW MEDEA.ARG"},"geometry": {"type": "Point",  "coordinates": [2.6116,36.4053] } },
-        
-        { "type": "Feature", "properties": {"evid":"es2018abkgp","fecha":"03/01/ 2018","hora":"09:18:49","latitud":"36.3114","longitud":"2.6828","profundidad":"28","intensidad":"",  "magnitud":"3.7","tipoMagnitud":"6","localizacion":"NW MEDEA.ARG"},"geometry": {"type": "Point",  "coordinates": [2.6828,36.3114] } },
+       
         
         { "type": "Feature", "properties": {"evid":"es2018abknl","fecha":"03/01/ 2018","hora":"10:13:41","latitud":"37.9160","longitud":"-1.4114","profundidad":"0","intensidad":"",  "magnitud":"1.4","tipoMagnitud":"4","localizacion":"NW LIBRILLA.MU"},"geometry": {"type": "Point",    "coordinates": [-1.4114,37.9160] } },
         
         { "type": "Feature", "properties": {"evid":"es2018abmpn","fecha":"03/01/  2018","hora":"14:50:54","latitud":"42.4119","longitud":"2.3232","profundidad":"0","intensidad":"",    "magnitud":"2.1","tipoMagnitud":"4","localizacion":"NE SETCASES.GI"},"geometry": {"type": "Point",  "coordinates": [2.3232,42.4119] } },
         
-        { "type": "Feature", "properties": {"evid":"es2018abnaf","fecha":"03/01/ 2018","hora":"14:54:51","latitud":"36.6824","longitud":"-10.9989","profundidad":"0","intensidad":"", "magnitud":"2.5","tipoMagnitud":"4","localizacion":"SW CABO DE SAN VICENTE"},"geometry": {"type": "Point",   "coordinates": [-10.9989,36.6824] } },
+       
         
         { "type": "Feature", "properties": {"evid":"es2018acabd","fecha":"03/   01/2018","hora":"21:32:14","latitud":"38.1786","longitud":"-1.5141","profundidad":"8","intensidad":"", "magnitud":"1.1","tipoMagnitud":"4","localizacion":"SW CIEZA.MU"},"geometry": {"type": "Point",  "coordinates": [-1.5141,38.1786] } },
         
         { "type": "Feature", "properties": {"evid":"es2018acald","fecha":"03/01/    2018","hora":"22:53:31","latitud":"28.2626","longitud":"-16.6512","profundidad":"0","intensidad":"",    "magnitud":"1.8","tipoMagnitud":"4","localizacion":"N VILAFLOR.ITF"},"geometry": {"type": "Point",  "coordinates": [-16.6512,28.2626] } },
         
-        { "type": "Feature", "properties": {"evid":"es2018accci","fecha":"04/  01/2018","hora":"02:03:05","latitud":"36.2114","longitud":"-4.0920","profundidad":"11","intensidad":"",   "magnitud":"1.5","tipoMagnitud":"4","localizacion":"ALBORÁN OESTE"},"geometry": {"type": "Point",  "coordinates": [-4.0920,36.2114] } },
+       
         
         { "type": "Feature", "properties": {"evid":"es2018acchl","fecha":"04/01/    2018","hora":"02:45:30","latitud":"36.8761","longitud":"-8.5612","profundidad":"23","intensidad":"",    "magnitud":"1.8","tipoMagnitud":"4","localizacion":"GOLFO DE CÁDIZ"},"geometry": {"type": "Point",  "coordinates": [-8.5612,36.8761] } },
         
-        { "type": "Feature", "properties": {"evid":"es2018acedb","fecha":"04/01/    2018","hora":"06:28:07","latitud":"39.0323","longitud":"-12.6830","profundidad":"0","intensidad":"",    "magnitud":"3.4","tipoMagnitud":"6","localizacion":"ATLÁNTICO"},"geometry": {"type": "Point", "coordinates":    [-12.6830,39.0323] } },
         
-        { "type": "Feature", "properties": {"evid":"es2018acefg","fecha":"04/01/2018",  "hora":"06:46:44","latitud":"35.7566","longitud":"-2.0856","profundidad":"0","intensidad":"", "magnitud":"2.1","tipoMagnitud":"4","localizacion":"ALBORÁN SUR"},"geometry": {"type": "Point",  "coordinates": [-2.0856,35.7566] } },
+        
+       
         
         { "type": "Feature", "properties": {"evid":"es2018acejf","fecha":"04/01/    2018","hora":"07:18:34","latitud":"37.5306","longitud":"-1.8368","profundidad":"11","intensidad":"",    "magnitud":"2.0","tipoMagnitud":"4","localizacion":"SW PUERTO LUMBRERAS.MU"},"geometry": {"type": "Point",  "coordinates": [-1.8368,37.5306] } },
         
-        { "type": "Feature", "properties": {"evid":"es2018acfgg","fecha":"04/01/    2018","hora":"09:04:44","latitud":"42.9129","longitud":"0.6443","profundidad":"11","intensidad":"", "magnitud":"1.3","tipoMagnitud":"4","localizacion":"NE BAGNERES DE LUCHON.FRA"},"geometry": {"type": "Point",     "coordinates": [0.6443,42.9129] } },
+     
         
         { "type": "Feature", "properties": {"evid":"es2018acllb","fecha":"04/01/   2018","hora":"22:43:29","latitud":"40.7907","longitud":"-2.7902","profundidad":"5","intensidad":"",    "magnitud":"0.7","tipoMagnitud":"4","localizacion":"W BARRIOPEDRO.GU"},"geometry": {"type": "Point",    "coordinates": [-2.7902,40.7907] } },
         
-        { "type": "Feature", "properties": {"evid":"es2018acmij","fecha":"05/01/  2018","hora":"00:33:16","latitud":"36.1448","longitud":"-2.8929","profundidad":"0","intensidad":"",   "magnitud":"2.3","tipoMagnitud":"4","localizacion":"ALBORÁN NORTE"},"geometry": {"type": "Point",  "coordinates": [-2.8929,36.1448] } },
+       
         
         { "type": "Feature", "properties": {"evid":"es2018acoce","fecha":"05/01/    2018","hora":"04:01:54","latitud":"37.1995","longitud":"-3.7382","profundidad":"0","intensidad":"", "magnitud":"2.1","tipoMagnitud":"4","localizacion":"NW SANTA FE.GR"},"geometry": {"type": "Point",   "coordinates": [-3.7382,37.1995] } },
         
         { "type": "Feature", "properties": {"evid":"es2018acpak","fecha":"05/01/ 2018","hora":"05:59:06","latitud":"27.8024","longitud":"-16.9225","profundidad":"4","intensidad":"", "magnitud":"1.5","tipoMagnitud":"4","localizacion":"ATLÁNTICO-CANARIAS"},"geometry": {"type": "Point",   "coordinates": [-16.9225,27.8024] } },
         
-        { "type": "Feature", "properties": {"evid":"es2018adbin","fecha":"05/   01/2018","hora":"11:25:50","latitud":"43.1984","longitud":"-0.9651","profundidad":"13","intensidad":"",    "magnitud":"1.8","tipoMagnitud":"4","localizacion":"W MAULEON LICHARRE.FRA"},"geometry": {"type": "Point",  "coordinates": [-0.9651,43.1984] } },
+        
         
         { "type": "Feature", "properties": {"evid":"es2018adcoj","fecha":"05/01/    2018","hora":"14:22:25","latitud":"38.0000","longitud":"-1.4390","profundidad":"11","intensidad":"II",  "magnitud":"2.5","tipoMagnitud":"4","localizacion":"E PLIEGO.MU"},"geometry": {"type": "Point",   "coordinates": [-1.4390,38.0000] } },
         
-        { "type": "Feature", "properties": {"evid":"es2018addfm","fecha":"05/01/ 2018","hora":"15:20:53","latitud":"35.6788","longitud":"-3.6576","profundidad":"0","intensidad":"",  "magnitud":"2.8","tipoMagnitud":"4","localizacion":"ALBORÁN SUR"},"geometry": {"type": "Point",   "coordinates": [-3.6576,35.6788] } },
         
-        { "type": "Feature", "properties": {"evid":"es2018adebj","fecha":"05/01/ 2018","hora":"16:57:04","latitud":"43.1437","longitud":"-1.3921","profundidad":"12","intensidad":"", "magnitud":"1.7","tipoMagnitud":"4","localizacion":"SW ST ETIENNE DE BAIGORRY.FRA"},"geometry": {"type":     "Point", "coordinates": [-1.3921,43.1437] } },
+        
+       
         
         { "type": "Feature", "properties": {"evid":"es2018adebm", "fecha":"05/01/2018","hora":"16:58:18","latitud":"43.1375","longitud":"-1.4297","profundidad":"16",  "intensidad":"","magnitud":"1.9","tipoMagnitud":"4","localizacion":"E ELIZONDO.NA"},"geometry": {"type":  "Point", "coordinates": [-1.4297,43.1375] } },
         
@@ -91,7 +75,7 @@
         
         { "type": "Feature", "properties": {"evid":"es2018adfkn",    "fecha":"05/01/2018","hora":"20:22:16","latitud":"40.7497","longitud":"-2.8087","profundidad":"14", "intensidad":"","magnitud":"0.9","tipoMagnitud":"4","localizacion":"E BRIHUEGA.GU"},"geometry": {"type":     "Point", "coordinates": [-2.8087,40.7497] } },
         
-        { "type": "Feature", "properties": {"evid":"es2018adfln", "fecha":"05/01/2018","hora":"20:30:26","latitud":"37.5016","longitud":"-8.8483","profundidad":"12",  "intensidad":"","magnitud":"4.0","tipoMagnitud":"4","localizacion":"N ALJEZUR.POR"},"geometry": {"type":  "Point", "coordinates": [-8.8483,37.5016] } },
+        
         
         { "type": "Feature", "properties": {"evid":"es2018adhhp",  "fecha":"06/01/2018","hora":"00:19:12","latitud":"40.7899","longitud":"-2.7883","profundidad":"7",    "intensidad":"","magnitud":"0.8","tipoMagnitud":"4","localizacion":"W BARRIOPEDRO.GU"},"geometry": {"type":     "Point", "coordinates": [-2.7883,40.7899] } },
         
@@ -115,7 +99,7 @@
         
         { "type": "Feature", "properties": {"evid":"es2018adkhg", "fecha":"06/01/2018","hora":"06:44:56","latitud":"40.8411","longitud":"-2.8323","profundidad":"9",   "intensidad":"","magnitud":"1.2","tipoMagnitud":"4","localizacion":"SE LEDANCA.GU"},"geometry": {"type":   "Point", "coordinates": [-2.8323,40.8411] } },
         
-        { "type": "Feature", "properties": {"evid":"es2018adlma",   "fecha":"06/01/2018","hora":"09:32:37","latitud":"36.7557","longitud":"5.2662","profundidad":"0",  "intensidad":"","magnitud":"3.9","tipoMagnitud":"6","localizacion":"MEDITERRÁNEO-ARGELIA"},"geometry":    {"type": "Point", "coordinates": [5.2662,36.7557] } },
+       
         
         { "type": "Feature", "properties":   {"evid":"es2018adnca","fecha":"06/01/2018","hora":"12:31:06","latitud":"38.0140","longitud":"-1.4358",    "profundidad":"12","intensidad":"","magnitud":"2.2","tipoMagnitud":"4","localizacion":"SW ALBUDEITE.MU"},   "geometry": {"type": "Point", "coordinates": [-1.4358,38.0140] } },
         
@@ -149,7 +133,7 @@
         
         { "type": "Feature", "properties":     {"evid":"es2018aedbb","fecha":"07/01/2018","hora":"01:24:08","latitud":"37.8498","longitud":"-3.2913",  "profundidad":"12","intensidad":"","magnitud":"2.6","tipoMagnitud":"4","localizacion":"E JÓDAR.J"},   "geometry": {"type": "Point", "coordinates": [-3.2913,37.8498] } },
         
-        { "type": "Feature", "properties":  {"evid":"es2018aedhe","fecha":"07/01/2018","hora":"02:14:21","latitud":"38.8385","longitud":"-7.6979",   "profundidad":"17","intensidad":"","magnitud":"2.1","tipoMagnitud":"4","localizacion":"W ESTREMOZ.POR"},   "geometry": {"type": "Point", "coordinates": [-7.6979,38.8385] } },
+        
         
         { "type": "Feature", "properties":  {"evid":"es2018aedho","fecha":"07/01/2018","hora":"02:19:44","latitud":"37.1225","longitud":"-5.2291",   "profundidad":"12","intensidad":"","magnitud":"1.8","tipoMagnitud":"4","localizacion":"NW VILLANUEVA DE SAN    JUAN.SE"},"geometry": {"type": "Point", "coordinates": [-5.2291,37.1225] } },
         
@@ -157,7 +141,7 @@
         
         { "type": "Feature", "properties": {"evid":"es2018aeeib","fecha":"07/01/2018","hora":"04:31:12", "latitud":"28.2812","longitud":"-16.2663","profundidad":"29","intensidad":"","magnitud":"2.3",   "tipoMagnitud":"4","localizacion":"ATLÁNTICO-CANARIAS"},"geometry": {"type": "Point", "coordinates":   [-16.2663,28.2812] } },
         
-        { "type": "Feature", "properties": {"evid":"es2018aeekg","fecha":"07/01/2018", "hora":"04:50:08","latitud":"36.7663","longitud":"-7.4170","profundidad":"26","intensidad":"",   "magnitud":"2.8","tipoMagnitud":"4","localizacion":"GOLFO DE CÁDIZ"},"geometry": {"type": "Point",     "coordinates": [-7.4170,36.7663] } },
+     
         
         { "type": "Feature", "properties": {"evid":"es2018aeekk","fecha":"07/01/   2018","hora":"04:51:46","latitud":"37.9940","longitud":"-1.4388","profundidad":"10","intensidad":"",   "magnitud":"1.6","tipoMagnitud":"4","localizacion":"E PLIEGO.MU"},"geometry": {"type": "Point",    "coordinates": [-1.4388,37.9940] } },
         
@@ -195,11 +179,11 @@
         
         { "type": "Feature", "properties": {"evid":"es2018aenjb","fecha":"08/01/ 2018","hora":"00:09:48","latitud":"37.9862","longitud":"-1.4501","profundidad":"10","intensidad":"", "magnitud":"0.8","tipoMagnitud":"4","localizacion":"E PLIEGO.MU"},"geometry": {"type": "Point",  "coordinates": [-1.4501,37.9862] } },
         
-        { "type": "Feature", "properties": {"evid":"es2018aenkj","fecha":"08/01/    2018","hora":"00:22:11","latitud":"43.4615","longitud":"-0.5988","profundidad":"10","intensidad":"",    "magnitud":"1.5","tipoMagnitud":"4","localizacion":"E ORTHEZ.FRA"},"geometry": {"type": "Point",    "coordinates": [-0.5988,43.4615] } },
+        
         
         { "type": "Feature", "properties": {"evid":"es2018aenle","fecha":"08/01/  2018","hora":"00:27:41","latitud":"37.9900","longitud":"-1.4291","profundidad":"3","intensidad":"",   "magnitud":"0.9","tipoMagnitud":"4","localizacion":"SW ALBUDEITE.MU"},"geometry": {"type": "Point",    "coordinates": [-1.4291,37.9900] } },
         
-        { "type": "Feature", "properties": {"evid":"es2018aenmd","fecha":"08/01/  2018","hora":"00:35:35","latitud":"43.4476","longitud":"-15.8964","profundidad":"0","intensidad":"",  "magnitud":"3.9","tipoMagnitud":"6","localizacion":"ATLÁNTICO"},"geometry": {"type": "Point", "coordinates":  [-15.8964,43.4476] } },
+       
         
         { "type": "Feature", "properties": {"evid":"es2018aeoef","fecha":"08/01/2018",    "hora":"01:41:31","latitud":"27.8738","longitud":"-15.0114","profundidad":"14","intensidad":"", "magnitud":"2.5","tipoMagnitud":"4","localizacion":"ATLÁNTICO-CANARIAS"},"geometry": {"type": "Point",   "coordinates": [-15.0114,27.8738] } },
         
@@ -233,7 +217,7 @@
         
         { "type": "Feature", "properties": {"evid":"es2018afdlo","fecha":"08/01/   2018","hora":"13:33:24","latitud":"37.9638","longitud":"-1.4748","profundidad":"15","intensidad":"",   "magnitud":"1.2","tipoMagnitud":"4","localizacion":"SE PLIEGO.MU"},"geometry": {"type": "Point",   "coordinates": [-1.4748,37.9638] } },
         
-        { "type": "Feature", "properties": {"evid":"es2018affah","fecha":"08/01/ 2018","hora":"16:20:12","latitud":"36.3192","longitud":"2.6055","profundidad":"11","intensidad":"",  "magnitud":"4.0","tipoMagnitud":"6","localizacion":"NW MEDEA.ARG"},"geometry": {"type": "Point",  "coordinates": [2.6055,36.3192] } },
+        
         
         { "type": "Feature", "properties": {"evid":"es2018afgbo","fecha":"08/01/ 2018","hora":"18:42:14","latitud":"39.7875","longitud":"-3.7783","profundidad":"11","intensidad":"", "magnitud":"2.2","tipoMagnitud":"4","localizacion":"SW VILLAMUELAS.TO"},"geometry": {"type": "Point",    "coordinates": [-3.7783,39.7875] } },
         
@@ -247,7 +231,7 @@
         
         { "type": "Feature", "properties": {"evid":"es2018afiee","fecha":"08/01/  2018","hora":"23:21:34","latitud":"37.8923","longitud":"-1.5075","profundidad":"0","intensidad":"",   "magnitud":"1.1","tipoMagnitud":"4","localizacion":"NW ALHAMA DE MURCIA.MU"},"geometry": {"type": "Point",     "coordinates": [-1.5075,37.8923] } },
         
-        { "type": "Feature", "properties": {"evid":"es2018afkgf","fecha":"09/01/   2018","hora":"03:58:27","latitud":"37.9473","longitud":"-9.6312","profundidad":"12","intensidad":"",   "magnitud":"2.0","tipoMagnitud":"4","localizacion":"ATLÁNTICO-PORTUGAL"},"geometry": {"type": "Point",     "coordinates": [-9.6312,37.9473] } },
+    
         
         { "type": "Feature", "properties": {"evid":"es2018afklk","fecha":"09/01/   2018","hora":"04:42:00","latitud":"37.0592","longitud":"-4.1804","profundidad":"10","intensidad":"",   "magnitud":"1.8","tipoMagnitud":"4","localizacion":"NW ZAFARRAYA.GR"},"geometry": {"type": "Point",    "coordinates": [-4.1804,37.0592] } },
         
@@ -299,6 +283,6 @@
         
         { "type": "Feature", "properties": {"evid":"es2018agckb","fecha":"09/01/2018", "hora":"21:49:29","latitud":"38.0089","longitud":"-1.4246","profundidad":"12","intensidad":"",   "magnitud":"1.6","tipoMagnitud":"4","localizacion":"SW ALBUDEITE.MU"},"geometry": {"type": "Point",    "coordinates": [-1.4246,38.0089] } },
         
-        { "type": "Feature", "properties": {"evid":"es2018agcmg","fecha":"09/01/  2018","hora":"22:08:39","latitud":"43.1039","longitud":"-0.5127","profundidad":"11","intensidad":"",  "magnitud":"1.6","tipoMagnitud":"4","localizacion":"W ARUDY.FRA"},"geometry": {"type": "Point",   "coordinates": [-0.5127,43.1039] } },
+       
         
         { "type": "Feature", "properties": {"evid":"es2018agdhd","fecha":"09/01/ 2018","hora":"23:36:22","latitud":"37.4384","longitud":"-2.1159","profundidad":"10","intensidad":"", "magnitud":"1.6","tipoMagnitud":"4","localizacion":"SW TABERNO.AL"},"geometry": {"type": "Point",    "coordinates": [-2.1159,37.4384] } }]}

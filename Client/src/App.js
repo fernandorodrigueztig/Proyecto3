@@ -10,7 +10,9 @@ import Login from './components/auth/Login'
 import Maps from './components/Maps'
 import Marker from './components/Marker'
 import MapSpain from './components/MapSpain'
+import Home from './components/Home'
 
+import ProtectedRoute from './components/routes/ProtectedRoute'
 //Browser Router en Index.js
 //Aqui en app montar el Switch con las Routes. 
 //Dentro los componentes
@@ -47,10 +49,14 @@ class App extends Component {
           <h1>Estoy en App.js logueado</h1>
           <Switch>
           
+             <Route path="/" exact render={match => <Home {...match} setUser={this.setTheUser} />} />
+             <Route path="/profile" exact render={match => <Profile {...match} setUser={this.setTheUser} />} />
+             <Route path="/signup" exact render={match => <Signup {...match} setUser={this.setTheUser} />} />
+             <Route path="/login" exact render={match => <Login {...match} setUser={this.setTheUser} />} />
+             <ProtectedRoute path='/maps' exact user={this.state.loggedInUser} component={Maps} />} />
+             <ProtectedRoute path='/mapspain' exact user={this.state.loggedInUser} component={MapSpain} />} />
           
-            {/* <Route path="/" exact component={}></Route> */}
-            {/* <Route path="/coasters" exact render={() => <CoastersList userInSession={this.state.loggedInUser} />} />
-            <Route path="/coasters/:id" exact component={CoasterDetail} /> */}
+            
           </Switch>
         </>
       );
@@ -61,15 +67,14 @@ class App extends Component {
           {/* <Maps></Maps> */}
           <h1>Estoy en APP.js sin loguear</h1>
           
-          
           <Switch>
           {/* <Route path="/" exact component={Signup}></Route> */}
 
-
+             <Route path="/" exact render={match => <Home {...match} setUser={this.setTheUser} />} />
              <Route path="/profile" exact render={match => <Profile {...match} setUser={this.setTheUser} />} />
              <Route path="/signup" exact render={match => <Signup {...match} setUser={this.setTheUser} />} />
              <Route path="/login" exact render={match => <Login {...match} setUser={this.setTheUser} />} />
-             <Route path="/maps" exact render={() => <Maps userInSession={this.state.loggedInUser} />} />
+             <ProtectedRoute path='/maps' exact user={this.state.loggedInUser} component={Maps} />} />
              <Route path="/mapspain" exact render={() => <MapSpain userInSession={this.state.loggedInUser} />} />
           </Switch>
         </>

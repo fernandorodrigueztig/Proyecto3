@@ -12,7 +12,7 @@ class MapSpain extends Component {
   static defaultProps = {
     center: {
       lat: 40,
-      lng: 3
+      lng: 0
 
     },
     zoom: 6

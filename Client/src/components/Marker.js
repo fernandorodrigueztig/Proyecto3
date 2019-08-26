@@ -38,4 +38,6 @@ Marker.propTypes = {
   text: PropTypes.string.isRequired,
 };
 
+
+
 export default Marker;

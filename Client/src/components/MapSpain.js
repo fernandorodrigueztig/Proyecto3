@@ -4,6 +4,7 @@ import GoogleMapReact from 'google-map-react';
 import Marker from './Marker'
 import axios from 'axios'
 import spainjson from '../earthquakes-spain.json'
+import {InfoWindow} from './InfoWindow'
 
 console.log(spainjson)
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
@@ -22,7 +23,6 @@ class MapSpain extends Component {
   
     this.state = {
       spainjson: spainjson,
-      
     };
   }
   
@@ -54,17 +54,40 @@ class MapSpain extends Component {
             defaultZoom={this.props.zoom}
             style={{height: "900px"}}
             >
+             
             {this.state.spainjson ? 
           
           
             this.state.spainjson.features.map(spainjson => {
                 console.log(spainjson)
-          return (<Marker
+          return (
+          <Marker
             lat={spainjson.geometry.coordinates[1]}
             lng={spainjson.geometry.coordinates[0]}
             text="My Marker"
-          />)
+          >
+          </Marker>
+          
+          )
           }) : null}
+          
+          {this.state.spainjson ? 
+          
+          
+          this.state.spainjson.features.map(spainjson => {
+              console.log(spainjson)
+        return (
+        <InfoWindow
+
+            lat={spainjson.geometry.coordinates[1]}
+            lng={spainjson.geometry.coordinates[0]}
+            text="My Marker"
+          >
+            {spainjson.properties.localizacion}
+          </InfoWindow>
+        )
+        }) : null}
+          
           {/* {console.log(spainjson.FeatureCollection.features.properties.coordinates.longitud)} */}
           </GoogleMapReact>
 

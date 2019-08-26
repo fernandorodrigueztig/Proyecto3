@@ -11,7 +11,7 @@ import Maps from './components/Maps'
 import Marker from './components/Marker'
 import MapSpain from './components/MapSpain'
 import Home from './components/Home'
-
+import Navbar from './components/Navbar'
 import ProtectedRoute from './components/routes/ProtectedRoute'
 //Browser Router en Index.js
 //Aqui en app montar el Switch con las Routes. 
@@ -75,7 +75,7 @@ class App extends Component {
              <Route path="/signup" exact render={match => <Signup {...match} setUser={this.setTheUser} />} />
              <Route path="/login" exact render={match => <Login {...match} setUser={this.setTheUser} />} />
              <ProtectedRoute path='/maps' exact user={this.state.loggedInUser} component={Maps} />} />
-             <Route path="/mapspain" exact render={() => <MapSpain userInSession={this.state.loggedInUser} />} />
+             <ProtectedRoute path='/mapspain' exact user={this.state.loggedInUser} component={MapSpain} />} />
           </Switch>
         </>
       );

@@ -85,6 +85,7 @@ class SimpleMap extends Component {
 
             console.log(terremoto,"map")
           return (<Marker
+            //mag={terremoto.properties.mag}
             lat={terremoto.geometry.coordinates[1]}
             lng={terremoto.geometry.coordinates[0]}
             text="My Marker"

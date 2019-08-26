@@ -83,7 +83,11 @@ class MapSpain extends Component {
             lng={spainjson.geometry.coordinates[0]}
             text="My Marker"
           >
-            {spainjson.properties.localizacion}
+            <span className='box'>
+            {spainjson.properties.localizacion}<br></br>
+            {spainjson.properties.fecha}<br></br>
+            {spainjson.properties.magnitud}<br></br>
+            </span>
           </InfoWindow>
         )
         }) : null}

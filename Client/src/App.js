@@ -13,6 +13,7 @@ import MapSpain from './components/MapSpain'
 import Home from './components/Home'
 import Navbar from './components/Navbar'
 import ProtectedRoute from './components/routes/ProtectedRoute'
+
 //Browser Router en Index.js
 //Aqui en app montar el Switch con las Routes. 
 //Dentro los componentes

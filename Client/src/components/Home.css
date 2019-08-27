@@ -1,4 +1,4 @@
-
+/* 
 
 .backGround {
     width: 100%;
@@ -14,5 +14,14 @@
     min-width:50%;
     min-height:50%;
     z-index: -1;
+ } */
+
+ .background-home {
+     background-image: url(./istockphoto-527890380-612x612.jpg);
+     background-size: cover;
+     height: 550px;
  }
- 
+ .link {
+     text-align: center;
+     
+ }

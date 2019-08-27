@@ -7,7 +7,6 @@ import spainjson from '../earthquakes-spain.json'
 import {InfoWindow} from './InfoWindow'
 import Chart from './Chart'
 import Navbar from './Navbar'
-console.log(spainjson)
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
 class MapSpain extends Component {
@@ -24,7 +23,7 @@ class MapSpain extends Component {
   
     this.state = {
       spainjson: spainjson,
-      arrayfalses: Array(spainjson.length).fill(false)
+     // arrayfalses: Array(spainjson.length).fill(false)
     };
   }
   
@@ -48,9 +47,11 @@ class MapSpain extends Component {
   render() {
       
       console.log(process.env.REACT_APP_APIKEY)
-      return (<>  
-          {/* // Important! Always set the container height explicitly */}
-            <Chart spainjson={spainjson}></Chart>
+      return (
+        
+      <>  
+
+            
             <GoogleMapReact
               bootstrapURLKeys={ {key: process.env.REACT_APP_APIKEY }}
               defaultCenter={this.props.center}
@@ -73,13 +74,13 @@ class MapSpain extends Component {
             }) : null}
           
             {this.state.spainjson ? 
-            this.state.spainjson.features.map(spainjson, idx => {
+            this.state.spainjson.features.map(spainjson => {
             console.log(spainjson)
             return (
             <InfoWindow
               //onclick
-              show={this.state.array[idx]}
-              key={idx}
+              //show={this.state.array[idx]}
+              //key={idx}
               lat={spainjson.geometry.coordinates[1]}
               lng={spainjson.geometry.coordinates[0]}
               text="My Marker"

@@ -69,7 +69,7 @@ class App extends Component {
            <Navbar setUser={this.setTheUser} userInSession={this.state.loggedInUser} />
         
           {/* <Maps></Maps> */}
-          <h1>Estoy en APP.js sin loguear</h1>
+          
           
           <Switch>
           {/* <Route path="/" exact component={Signup}></Route> */}

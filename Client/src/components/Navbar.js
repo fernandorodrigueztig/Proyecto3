@@ -32,15 +32,16 @@ class NavBar extends Component {
                 <>
                     <div className="toggle-menu" onClick={this.toggleMenu}>&equiv; </div>
                     <header className="menu">
-                        <h1>Jishin</h1>
+                        
                         <nav class="navbar navbar-dark bg-dark">
-                            <ul>
-                                <li><Link to="/">Home</Link></li>
-                                <li><Link to="/login">Login</Link></li>
-                                <li><div onClick={this.logout}>Cerrar sesión</div></li>
-                                <li><Link to="/signup">Signup</Link></li>
-                                <li><small>Bienvenid@, {saludo}</small></li>
-                            </ul>
+                        <h1>Jishin</h1>
+                                <p><Link to="/">Home</Link></p>
+                                <p><Link to="/login">Login</Link></p>
+                                <p><Link to="/profile">Profile</Link></p>
+                                <p><Link to="/signup">Signup</Link></p>
+                                <p><div onClick={this.logout}>Cerrar sesión</div></p>
+                                <p><small>Bienvenid@, {saludo}</small></p>
+                            
                         </nav>
                     </header>
                 </>
@@ -50,17 +51,18 @@ class NavBar extends Component {
                 <>
                     <div className="toggle-menu" onClick={this.toggleMenu}>&equiv; </div>
                     <header className="menu">
-                        <h1>Jishin</h1>
+                        
                         <nav class="navbar navbar-dark bg-dark">
-                            <ul>
-                                <li><Link to="/">Home</Link></li>
-                                <li><Link to="/login">Login</Link></li>
-                                <li><div onClick={this.logout}>Cerrar sesión</div></li>
-                                <li><Link to="/signup">Signup</Link></li>
-                                <li><Link to="/profile">Profile</Link></li>
-                                <li><small>Bienvenid@, {saludo}</small></li>
+                        <h1>Jishin</h1>
+                                <p><Link to="/">Home</Link></p>
+                                <p><Link to="/login">Login</Link></p>
                                 
-                            </ul>
+                                <p><Link to="/signup">Signup</Link></p>
+                                <p><Link to="/profile">Profile</Link></p>
+                                <p><div onClick={this.logout}>Cerrar sesión</div></p>
+                                <p><small>Bienvenid@, {saludo}</small></p>
+                                
+                            
                         </nav>
                     </header>
                 </>

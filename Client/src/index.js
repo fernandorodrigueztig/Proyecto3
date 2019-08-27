@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter as Router } from 'react-router-dom'
-
+import Toast from 'react-bootstrap/Toast'
 
 ReactDOM.render(<Router>
     <App />

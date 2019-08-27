@@ -1,7 +1,7 @@
 import React from 'react'
 
-export const InfoWindow = ({children, show = true})=> {
-    return (show ? <div style={{fontSize: "200px;", padding: "20px;", }}>
+export const InfoWindow = ({children, show = false})=> {
+    return (show ? <div>
         <p>{children}</p>
     </div> : <></>)
 }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import AuthServices from '../../services/Auth.services'
-
+import Navbar from '../Navbar'
 class Login extends Component {
 
     constructor(props) {

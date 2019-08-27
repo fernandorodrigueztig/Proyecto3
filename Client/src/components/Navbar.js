@@ -1,7 +1,7 @@
-/*import React, { Component } from 'react'
+import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
-import AuthServices from '../services/auth.services'
+import AuthServices from '../services/Auth.services'
 
 class NavBar extends Component {
 
@@ -32,13 +32,13 @@ class NavBar extends Component {
                 <>
                     <div className="toggle-menu" onClick={this.toggleMenu}>&equiv; </div>
                     <header className="menu">
-                        <h1>Roller Coaster App</h1>
-                        <nav>
+                        <h1>Jishin</h1>
+                        <nav class="navbar navbar-dark bg-dark">
                             <ul>
-                                <li><Link to="/">Inicio</Link></li>
-                                <li><Link to="/profile">Perfil</Link></li>
-                                <li><Link to="/coasters">Montañas rusas</Link></li>
+                                <li><Link to="/">Home</Link></li>
+                                <li><Link to="/login">Login</Link></li>
                                 <li><div onClick={this.logout}>Cerrar sesión</div></li>
+                                <li><Link to="/signup">Signup</Link></li>
                                 <li><small>Bienvenid@, {saludo}</small></li>
                             </ul>
                         </nav>
@@ -50,15 +50,16 @@ class NavBar extends Component {
                 <>
                     <div className="toggle-menu" onClick={this.toggleMenu}>&equiv; </div>
                     <header className="menu">
-                        <h1>Roller Coaster App</h1>
-                        <nav>
+                        <h1>Jishin</h1>
+                        <nav class="navbar navbar-dark bg-dark">
                             <ul>
-                                <li><Link to="/">Inicio</Link></li>
-                                <li><Link to="/profile">Perfil</Link></li>
-                                <li><Link to="/coasters">Montañas rusas</Link></li>
-                                <li><Link to="/signup">Registro</Link></li>
-                                <li><Link to="/login">Inicio de sesión</Link></li>
+                                <li><Link to="/">Home</Link></li>
+                                <li><Link to="/login">Login</Link></li>
+                                <li><div onClick={this.logout}>Cerrar sesión</div></li>
+                                <li><Link to="/signup">Signup</Link></li>
+                                <li><Link to="/profile">Profile</Link></li>
                                 <li><small>Bienvenid@, {saludo}</small></li>
+                                
                             </ul>
                         </nav>
                     </header>
@@ -68,4 +69,4 @@ class NavBar extends Component {
 
     }
 }
-export default NavBar*/
+export default NavBar

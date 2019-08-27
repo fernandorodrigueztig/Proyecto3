@@ -11,9 +11,10 @@ import Maps from './components/Maps'
 import Marker from './components/Marker'
 import MapSpain from './components/MapSpain'
 import Home from './components/Home'
-import Navbar from './components/Navbar'
 import ProtectedRoute from './components/routes/ProtectedRoute'
-
+import Chart from './components/Chart'
+import Navbar from './components/Navbar'
+//import Navbar from './components/Chart'
 //Browser Router en Index.js
 //Aqui en app montar el Switch con las Routes. 
 //Dentro los componentes
@@ -44,10 +45,11 @@ class App extends Component {
 
     if (this.state.loggedInUser) {
       return (
-       // <NavBar setUser={this.setTheUser} userInSession={this.state.loggedInUser} />
         <>
+       <Navbar setUser={this.setTheUser} userInSession={this.state.loggedInUser} />
+        
           
-          <h1>Estoy en App.js logueado</h1>
+          
           <Switch>
           
              <Route path="/" exact render={match => <Home {...match} setUser={this.setTheUser} />} />
@@ -63,8 +65,9 @@ class App extends Component {
       );
     } else {
       return (
-           //<NavBar setUser={this.setTheUser} userInSession={this.state.loggedInUser} />
         <>
+           <Navbar setUser={this.setTheUser} userInSession={this.state.loggedInUser} />
+        
           {/* <Maps></Maps> */}
           <h1>Estoy en APP.js sin loguear</h1>
           

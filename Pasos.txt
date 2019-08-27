@@ -9,3 +9,6 @@
 6. Vista principal con carrusel.
 7. Extras
 -------------------------------------
+1. Home.
+2. NavBar todas secciones
+3. diferenciacion visual.

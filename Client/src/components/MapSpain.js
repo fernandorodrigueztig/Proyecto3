@@ -5,7 +5,8 @@ import Marker from './Marker'
 import axios from 'axios'
 import spainjson from '../earthquakes-spain.json'
 import {InfoWindow} from './InfoWindow'
-
+import Chart from './Chart'
+import Navbar from './Navbar'
 console.log(spainjson)
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
@@ -23,6 +24,7 @@ class MapSpain extends Component {
   
     this.state = {
       spainjson: spainjson,
+      arrayfalses: Array(spainjson.length).fill(false)
     };
   }
   
@@ -46,60 +48,54 @@ class MapSpain extends Component {
   render() {
       
       console.log(process.env.REACT_APP_APIKEY)
-      return (
-        // Important! Always set the container height explicitly
+      return (<>  
+          {/* // Important! Always set the container height explicitly */}
+            <Chart spainjson={spainjson}></Chart>
             <GoogleMapReact
-            bootstrapURLKeys={ {key: process.env.REACT_APP_APIKEY }}
-            defaultCenter={this.props.center}
-            defaultZoom={this.props.zoom}
-            style={{height: "900px"}}
+              bootstrapURLKeys={ {key: process.env.REACT_APP_APIKEY }}
+              defaultCenter={this.props.center}
+              defaultZoom={this.props.zoom}
+              style={{height: "900px"}}
             >
              
             {this.state.spainjson ? 
-          
-          
             this.state.spainjson.features.map(spainjson => {
                 console.log(spainjson)
-          return (
-          <Marker
-            lat={spainjson.geometry.coordinates[1]}
-            lng={spainjson.geometry.coordinates[0]}
-            text="My Marker"
-          >
-          </Marker>
+            return (
+            <Marker
+              lat={spainjson.geometry.coordinates[1]}
+              lng={spainjson.geometry.coordinates[0]}
+              text="My Marker"
+            >
+            </Marker>
           
-          )
-          }) : null}
+            )
+            }) : null}
           
-          {this.state.spainjson ? 
+            {this.state.spainjson ? 
+            this.state.spainjson.features.map(spainjson, idx => {
+            console.log(spainjson)
+            return (
+            <InfoWindow
+              //onclick
+              show={this.state.array[idx]}
+              key={idx}
+              lat={spainjson.geometry.coordinates[1]}
+              lng={spainjson.geometry.coordinates[0]}
+              text="My Marker"
+            >
+              <span className='box'>
+              {spainjson.properties.localizacion}<br></br>
+              {spainjson.properties.fecha}<br></br>
+              {spainjson.properties.magnitud}<br></br>
+              </span>
+            </InfoWindow>
+            )}
+            ) : null}
           
-          
-          this.state.spainjson.features.map(spainjson => {
-              console.log(spainjson)
-        return (
-        <InfoWindow
-
-            lat={spainjson.geometry.coordinates[1]}
-            lng={spainjson.geometry.coordinates[0]}
-            text="My Marker"
-          >
-            <span className='box'>
-            {spainjson.properties.localizacion}<br></br>
-            {spainjson.properties.fecha}<br></br>
-            {spainjson.properties.magnitud}<br></br>
-            </span>
-          </InfoWindow>
-        )
-        }) : null}
-          
-          {/* {console.log(spainjson.FeatureCollection.features.properties.coordinates.longitud)} */}
-          </GoogleMapReact>
-
-          
-       
-
-      
-    );
+            {/* {console.log(spainjson.FeatureCollection.features.properties.coordinates.longitud)} */}
+            </GoogleMapReact>
+          </>)
   }
 }
 

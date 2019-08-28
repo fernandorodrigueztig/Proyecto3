@@ -14,6 +14,7 @@ import Home from './components/Home'
 import ProtectedRoute from './components/routes/ProtectedRoute'
 import Chart from './components/Chart'
 import Navbar from './components/Navbar'
+import Modal from 'react-bootstrap/Modal'
 //import Navbar from './components/Chart'
 //Browser Router en Index.js
 //Aqui en app montar el Switch con las Routes. 

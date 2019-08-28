@@ -3,6 +3,9 @@ import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
 import Marker from './Marker'
 import spainjson from '../earthquakes-spain.json'
+import Modal from 'react-bootstrap/Modal'
+import Navbar from './Navbar'
+
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
 class MapSpain extends Component {
@@ -19,19 +22,44 @@ class MapSpain extends Component {
   
     this.state = {
       spainjson: spainjson,
+      showModal: false,
+      magnitud: 'aqui esto falta',
+      date: '',
+      place: ''
+
     };
   }
-
- showInfo = info =>{
-   alert("Datos sobre el seísmo: " + info)
+  handleModalOpen = () => this.setState({ showModal: true })
+  handleModalClose = () => this.setState({ showModal: false })
+ 
+  showInfo = (mag, dat, pla) =>{
+      this.setState({
+        magnitud: mag,
+        date: dat,
+        place: pla
+      })
+    this.handleModalOpen()
  }
-    
+ 
+
+
   render() {
-      
+     
       console.log(process.env.REACT_APP_APIKEY)
       return (
         
       <>  
+       <Modal show={this.state.showModal} onHide={this.handleModalClose}>
+
+      <Modal.Body>
+        <p>La magnitud fue de {this.state.magnitud}, 
+        acontecido el día {this.state.date}  
+        en {this.state.place}</p>
+      </Modal.Body>
+
+      </Modal>
+            
+
             <GoogleMapReact
               bootstrapURLKeys={ {key: process.env.REACT_APP_APIKEY }}
               defaultCenter={this.props.center}
@@ -41,14 +69,13 @@ class MapSpain extends Component {
              
             {this.state.spainjson ? 
             this.state.spainjson.features.map(spainjson => {
-                console.log(spainjson)
             return (
 
             <Marker
               lat={spainjson.geometry.coordinates[1]}
               lng={spainjson.geometry.coordinates[0]}
               text="My Marker"
-              onClick={()=> this.showInfo(`La magnitud fue de ${spainjson.properties.magnitud}, acontecido el día ${spainjson.properties.fecha} en ${spainjson.properties.localizacion}`)}
+              onClick={()=> this.showInfo(spainjson.properties.magnitud, spainjson.properties.fecha, spainjson.properties.localizacion)}
             >
             </Marker>
           

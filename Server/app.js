@@ -77,5 +77,7 @@ const index = require('./routes/index');
 app.use('/', index);
 const auth = require('./routes/auth.routes');
 app.use('/api', auth);
-
+app.use((req, res) => {
+  res.sendFile(__dirname + "/public/index.html");
+  });
 module.exports = app;

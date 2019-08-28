@@ -39,7 +39,7 @@ class NavBar extends Component {
                                 <p><Link to="/login">Login</Link></p>
                                 <p><Link to="/profile">Profile</Link></p>
                                 <p><Link to="/signup">Signup</Link></p>
-                                <p><div onClick={this.logout}>Cerrar sesión</div></p>
+                                <p><div onClick={this.logout}>Logout</div></p>
                                 <p><small>Bienvenid@, {saludo}</small></p>
                             
                         </nav>
@@ -59,7 +59,7 @@ class NavBar extends Component {
                                 
                                 <p><Link to="/signup">Signup</Link></p>
                                 <p><Link to="/profile">Profile</Link></p>
-                                <p><div onClick={this.logout}>Cerrar sesión</div></p>
+                                <p><div onClick={this.logout}>Logout</div></p>
                                 <p><small>Bienvenid@, {saludo}</small></p>
                                 
                             

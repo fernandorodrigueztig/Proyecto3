@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-
+import './Navbar.css'
 import AuthServices from '../services/Auth.services'
 
 class NavBar extends Component {
@@ -30,7 +30,6 @@ class NavBar extends Component {
         if (this.props.userInSession) {
             return (
                 <>
-                    <div className="toggle-menu" onClick={this.toggleMenu}>&equiv; </div>
                     <header className="menu">
                         
                         <nav class="navbar navbar-dark bg-dark">

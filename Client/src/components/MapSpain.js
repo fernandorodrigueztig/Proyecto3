@@ -4,9 +4,6 @@ import GoogleMapReact from 'google-map-react';
 import Marker from './Marker'
 import spainjson from '../earthquakes-spain.json'
 import Modal from 'react-bootstrap/Modal'
-import Navbar from './Navbar'
-
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
 class MapSpain extends Component {
   static defaultProps = {
@@ -69,12 +66,27 @@ class MapSpain extends Component {
              
             {this.state.spainjson ? 
             this.state.spainjson.features.map(spainjson => {
+
+            let theColor 
+            
+            if (spainjson.properties.magnitud  <= 0.5) { 
+              theColor = 'yellow';
+            }
+            else if (spainjson.properties.magnitud >= 2)  {
+              theColor = 'orange';
+            }  
+            else {
+              theColor = 'red';
+            }
+            
             return (
 
             <Marker
               lat={spainjson.geometry.coordinates[1]}
               lng={spainjson.geometry.coordinates[0]}
-              text="My Marker"
+              text={spainjson.properties.localizacion}
+              magnitud={spainjson.properties.magnitud}
+              color={theColor}
               onClick={()=> this.showInfo(spainjson.properties.magnitud, spainjson.properties.fecha, spainjson.properties.localizacion)}
             >
             </Marker>

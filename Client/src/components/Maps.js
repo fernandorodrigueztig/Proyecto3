@@ -83,11 +83,23 @@ class SimpleMap extends Component {
           
           this.state.filtered.map(terremoto => {
 
+            let worldColor 
+            if (terremoto.properties.mag<=2){ 
+              worldColor = 'yellow';
+            }else if (terremoto.properties.mag>2.1 && terremoto.properties.mag<=4.5){
+              worldColor = 'orange';
+            }
+            else {
+              worldColor = 'red';
+            }
+
             console.log(terremoto,"map")
           return (<Marker
             //mag={terremoto.properties.mag}
             lat={terremoto.geometry.coordinates[1]}
             lng={terremoto.geometry.coordinates[0]}
+            magnitud={terremoto.properties.mag}
+            color={worldColor}
             text="My Marker"
           />)
           }) : null}

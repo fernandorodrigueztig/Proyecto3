@@ -1,16 +1,29 @@
-.log {
-    background-image: url(../back.jpg);
-    background-size: cover;
-    height: 598px;
-    
+.back {
+    background: url(/images/4eb78dc4ff_126527_onde-sismique-coupe-monde.jpg) no-repeat center / cover;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: -100;
 }
-.log2{
-    background-image: url(../back.jpg);
-    background-size: cover;
-    height: 598px;
+
+.back2 {
+    background: url(/images/4eb78dc4ff_126527_onde-sismique-coupe-monde.jpg) no-repeat center / cover;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: -100;
 }
-.log3{
-    background-image: url(../back.jpg);
-    background-size: cover;
-    height: 598px;
+
+.back3 {
+    background: url(/images/4eb78dc4ff_126527_onde-sismique-coupe-monde.jpg) no-repeat center / cover;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: -100;
 }

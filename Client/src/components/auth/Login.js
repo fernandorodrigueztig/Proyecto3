@@ -37,6 +37,8 @@ class Login extends Component {
     render() {
 
         return (
+            <>
+            <div className="back3"></div>
             <div className="container log">
                 <h1>Inicio de sesión de usuario</h1>
                 <form onSubmit={this.handleFormSubmit}>
@@ -46,7 +48,7 @@ class Login extends Component {
                     <input type="submit" value="Iniciar sesión" />
                 </form>
             </div>
-
+            </>
         )
     }
 }

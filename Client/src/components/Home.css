@@ -19,9 +19,26 @@
  .background-home {
      background-image: url(./istockphoto-527890380-612x612.jpg);
      background-size: cover;
-     height: 598px;
+     height: 605px;
  }
  .link {
      text-align: center;
      
  }
+ .buttons {
+    padding: 20% 0;
+    text-align: center;
+ }
+
+ .buttons .btn:first-of-type 
+{
+    margin-right: 10px
+}
+
+.buttons .btn a
+{
+    color:white
+}
+
+
+ 

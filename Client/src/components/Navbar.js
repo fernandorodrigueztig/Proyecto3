@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import './Navbar.css'
 import AuthServices from '../services/Auth.services'
+import Navbar from 'react-bootstrap/Navbar'
+import {Nav} from 'react-bootstrap'
 
 class NavBar extends Component {
 
@@ -32,15 +34,18 @@ class NavBar extends Component {
                 <>
                     <header className="menu">
                         
-                        <nav class="navbar navbar-dark bg-dark">
+                        <nav className="navbar  navbar-dark bg-dark">
+                        
                         <h1>Jishin</h1>
                                 <p><Link to="/">Home</Link></p>
                                 <p><Link to="/login">Login</Link></p>
                                 <p><Link to="/profile">Profile</Link></p>
                                 <p><Link to="/signup">Signup</Link></p>
-                                <p><div onClick={this.logout}>Logout</div></p>
+                                <p><Link onClick={this.logout}>Logout</Link></p>
+                                <font color="white" face="roboto">
                                 <p><small>Bienvenid@, {saludo}</small></p>
-                            
+                                </font>
+                              
                         </nav>
                     </header>
                 </>
@@ -48,23 +53,37 @@ class NavBar extends Component {
         } else {
             return (
                 <>
-                    <div className="toggle-menu" onClick={this.toggleMenu}>&equiv; </div>
+                    {/* <div className="toggle-menu" onClick={this.toggleMenu}>&equiv; </div>
                     <header className="menu">
                         
                         <nav class="navbar navbar-dark bg-dark">
                         <h1>Jishin</h1>
                                 <p><Link to="/">Home</Link></p>
                                 <p><Link to="/login">Login</Link></p>
-                                
                                 <p><Link to="/signup">Signup</Link></p>
                                 <p><Link to="/profile">Profile</Link></p>
-                                <p><div onClick={this.logout}>Logout</div></p>
+                                <p><Link to onClick={this.logout}>Logout</Link></p>
                                 <p><small>Bienvenid@, {saludo}</small></p>
                                 
                             
                         </nav>
-                    </header>
-                </>
+                    </header> */}
+
+
+<>
+  <Navbar bg="dark" variant="dark">
+   
+    <Nav className="mr-auto">
+      <Nav.Link href="/">Home</Nav.Link>
+      <Nav.Link href="/login">Login</Nav.Link>
+      <Nav.Link href="/signup">Signup</Nav.Link>
+      <Nav.Link href="/profile">Profile</Nav.Link>
+      <Nav.Link to onClick={this.logout}>Logout</Nav.Link>
+      <p><large>Bienvenid@, {saludo}</large></p>
+    </Nav>
+  </Navbar>
+ </>
+</>
             )
         }
 

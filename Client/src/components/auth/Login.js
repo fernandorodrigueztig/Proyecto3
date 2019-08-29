@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import AuthServices from '../../services/Auth.services'
 import Navbar from '../Navbar'
+
+import '../../styles/styles.css'
 class Login extends Component {
 
     constructor(props) {
@@ -35,7 +37,7 @@ class Login extends Component {
     render() {
 
         return (
-            <div className="container">
+            <div className="container log">
                 <h1>Inicio de sesión de usuario</h1>
                 <form onSubmit={this.handleFormSubmit}>
                     Usuario: <input name="username" type="text" value={this.state.username} onChange={this.handleInputChange} /> <br></br>

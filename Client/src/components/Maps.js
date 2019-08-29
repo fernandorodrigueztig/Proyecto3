@@ -58,7 +58,7 @@ class SimpleMap extends Component {
   }
     
   render() {
-      console.log(this.state)
+      
       
       return (
         // Important! Always set the container height explicitly
@@ -84,7 +84,7 @@ class SimpleMap extends Component {
           this.state.filtered.map(terremoto => {
 
             let worldColor 
-            if (terremoto.properties.mag<=2){ 
+            if (terremoto.properties.mag<2){ 
               worldColor = 'yellow';
             }else if (terremoto.properties.mag>2.1 && terremoto.properties.mag<=4.5){
               worldColor = 'orange';
@@ -93,7 +93,7 @@ class SimpleMap extends Component {
               worldColor = 'red';
             }
 
-            console.log(terremoto,"map")
+            
           return (<Marker
             //mag={terremoto.properties.mag}
             lat={terremoto.geometry.coordinates[1]}
